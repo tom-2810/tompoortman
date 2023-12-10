@@ -21,23 +21,23 @@ body {
     left: 0;
     top: .03em;
     animation: var(--span-shift-animation);
-    animation-delay: calc(var(--welcome-delay)*4);
+    animation-delay: 1.5s;
 }
 
 .card .shadowText::before {
     left: 0;
     top: 0;
     animation: var(--span-before-shift-animation);
-    animation-delay: calc(var(--welcome-delay)*4);
+    animation-delay: 1.5s;
 }
 
 .card .inner-card {
-    animation: var(--shift-animation) calc(var(--welcome-delay)*4), 1s var(--welcome-delay) show-border forwards;
+    animation: var(--shift-animation) 1.5s, 1s 1s show-border forwards;
 }
 
 .card .status {
     opacity: 0;
-    animation: 1s var(--welcome-delay) show forwards;
+    animation: 1s 1s show forwards;
 }
 
 @keyframes span-shift {
@@ -70,7 +70,7 @@ body {
     }
 
     to {
-        transform: translate(-16px, -16px);
+        transform: translate(-10px, -10px);
     }
 }
 

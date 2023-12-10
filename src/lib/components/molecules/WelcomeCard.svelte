@@ -50,7 +50,7 @@
 <div class="card">
 	<div class="inner-card">
 		<div class="content">
-			<ShadowText content={'Tom Poortman'} fontsize={'clamp(1.5rem, 9vw, 9rem)'} />
+			<ShadowText content={'Tom Poortman'} fontsize={'clamp(2.2rem, 12vw, 9rem)'} />
 			<div class="status">
 				<Status />
 				<DrawnLine />
@@ -69,8 +69,9 @@
 		border-radius: 15px;
 	}
 	.card {
-		width: 70%;
-		aspect-ratio: 2/1.05;
+		width: 80%;
+		max-width: 65rem;
+		/* aspect-ratio: 2/1.05; */
 		background-color: #ffb649;
 		z-index: -2;
 	}
@@ -81,6 +82,7 @@
 		align-items: center;
 		width: 100%;
 		height: 100%;
+		padding: 7% 10%;
 		background-color: white;
 		border: 0px solid #202020;
 		transform: translate(var(--inner-card-x), var(--inner-card-y));
@@ -100,5 +102,21 @@
 		width: min-content;
 	}
 
+	@media only screen and (max-width: 800px) {
+  .card {
+	width: 90%;
+  }
+  .inner-card {
+	justify-content: left;
+	padding: 1.5rem;
+  }
+  .content {
+	align-items: unset;
+	gap: 1rem;
+  }
+  .status {
+	margin-left: 0;
+  }
+}
 	
 </style>
