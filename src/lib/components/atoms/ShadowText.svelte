@@ -1,9 +1,12 @@
 <script>
 	export let content;
 	export let fontsize;
+	export let position;
 </script>
 
-<span class="shadowText" style="font-size: {fontsize};" data-text={content}>{content}</span>
+<span class="shadowText" style="font-size: {fontsize}; position: {position}" data-text={content}
+	>{content}</span
+>
 
 <style>
 	:root {
@@ -14,7 +17,7 @@
 		--span-before-left: 0.1em;
 	}
 	span {
-		position: relative;
+		position: absolute;
 		color: #fff;
 		font-weight: 900;
 		line-height: 100%;
@@ -44,13 +47,13 @@
 	}
 
 	span {
-		top: var(--span-top);
-		left: var(--span-left);
+		top: -0.05em;
+		left: -0.1em;
 	}
 
 	span::before {
-		top: var(--span-before-top);
-		left: var(--span-before-left);
+		top: 0.08em;
+		left: 0.1em;
 	}
 
 	span:hover {

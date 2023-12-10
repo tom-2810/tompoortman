@@ -9,14 +9,6 @@
 
 	onMount(() => {
 		const card = document.querySelector('.card');
-		document.documentElement.style.setProperty('--span-top', 0.03 + 'em');
-		document.documentElement.style.setProperty('--span-left', 0);
-
-		document.documentElement.style.setProperty('--span-before-top', 0);
-		document.documentElement.style.setProperty('--span-before-left', 0);
-
-		document.documentElement.style.setProperty('--inner-card-x', 0);
-		document.documentElement.style.setProperty('--inner-card-y', 0);
 
 		let tl = gsap.timeline({
 			scrollTrigger: {
@@ -31,7 +23,7 @@
 
 		tl.fromTo(
 			'html',
-			.1,
+			0.1,
 			{
 				'--span-shift-animation': 'none',
 				'--span-before-shift-animation': 'none',
@@ -41,7 +33,7 @@
 				delay: 0,
 				'--span-shift-animation': 'var(--welcome-delay) span-shift forwards',
 				'--span-before-shift-animation': 'var(--welcome-delay) span-before-shift forwards',
-				'--shift-animation': 'var(--welcome-delay) shift forwards',
+				'--shift-animation': 'var(--welcome-delay) shift forwards'
 			}
 		);
 	});
@@ -50,7 +42,11 @@
 <div class="card">
 	<div class="inner-card">
 		<div class="content">
-			<ShadowText content={'Tom Poortman'} fontsize={'clamp(2.2rem, 12vw, 9rem)'} />
+			<ShadowText
+				content={'Tom Poortman'}
+				fontsize={'clamp(2.2rem, 12vw, 9rem)'}
+				position={'relative'}
+			/>
 			<div class="status">
 				<Status />
 				<DrawnLine />
@@ -84,7 +80,7 @@
 		height: 100%;
 		padding: 7% 10%;
 		background-color: white;
-		border: 0px solid #202020;
+		border: 6px solid #20202000;
 		transform: translate(var(--inner-card-x), var(--inner-card-y));
 		z-index: 0;
 	}
@@ -103,20 +99,19 @@
 	}
 
 	@media only screen and (max-width: 800px) {
-  .card {
-	width: 90%;
-  }
-  .inner-card {
-	justify-content: left;
-	padding: 1.5rem;
-  }
-  .content {
-	align-items: unset;
-	gap: 1rem;
-  }
-  .status {
-	margin-left: 0;
-  }
-}
-	
+		.card {
+			width: 95%;
+		}
+		.inner-card {
+			justify-content: left;
+			padding: 1.5rem;
+		}
+		.content {
+			align-items: unset;
+			gap: 1rem;
+		}
+		.status {
+			margin-left: 0;
+		}
+	}
 </style>

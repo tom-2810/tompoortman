@@ -18,21 +18,22 @@ body {
 }
 
 .card .shadowText {
+    position: absolute;
     left: 0;
     top: .03em;
     animation: var(--span-shift-animation);
-    animation-delay: 1.5s;
+    animation-delay: 2s;
 }
 
 .card .shadowText::before {
     left: 0;
     top: 0;
     animation: var(--span-before-shift-animation);
-    animation-delay: 1.5s;
+    animation-delay: 2s;
 }
 
 .card .inner-card {
-    animation: var(--shift-animation) 1.5s, 1s 1s show-border forwards;
+    animation: var(--shift-animation) 1.5s,1s 1s show-border forwards;
 }
 
 .card .status {
@@ -70,17 +71,29 @@ body {
     }
 
     to {
-        transform: translate(-10px, -10px);
+        transform: translate(-14px, -14px);
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    @keyframes shift {
+        from {
+            transform: translate(0px, 0px);
+        }
+    
+        to {
+            transform: translate(-7px, -7px);
+        }
     }
 }
 
 @keyframes show-border {
     from {
-        border: 6px solid #20202000;
+        border: 5px solid #20202000;
     }
 
     to {
-        border: 6px solid #202020;
+        border: 5px solid #202020;
     }
 }
 
