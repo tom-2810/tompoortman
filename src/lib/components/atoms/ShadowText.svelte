@@ -22,6 +22,7 @@
 		font-weight: 900;
 		line-height: 100%;
 		width: min-content;
+		transition: 0.1s;
 	}
 
 	span::before,
@@ -36,12 +37,12 @@
 
 	span::before {
 		color: #202020;
+		transition: 0.1s;
 
 		font-weight: 900;
 	}
 
 	span:after {
-		/*   -webkit-text-stroke: .16em white; */
 		left: 0em;
 		top: 0;
 	}
@@ -56,12 +57,12 @@
 		left: 0.1em;
 	}
 
-	span:hover {
+	span:active {
 		left: 0;
 		top: 0.03em;
 	}
 
-	span:hover::before {
+	span:active::before {
 		left: 0;
 		top: 0;
 	}

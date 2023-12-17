@@ -1,108 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;800;900&display=swap');
 
 :root {
-    --welcome-delay: .3s;
-    --span-shift-animation: var(--welcome-delay) span-shift forwards;
-    --span-before-shift-animation: var(--welcome-delay) span-before-shift forwards;
-    --shift-animation: var(--welcome-delay) shift forwards;
+    --size-s: .5rem;
+    --size-m: 1rem;
+    --size-l: 2rem;
+
+    --default-width: 85%;
+    --default-max-width: 75rem;
 }
 
 * {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
-
+    height: 200vh;
 }
 
-.card .shadowText {
-    position: absolute;
-    left: 0;
-    top: .03em;
-    animation: var(--span-shift-animation);
-    animation-delay: 2s;
+a {
+    all: unset;
+    cursor: pointer;
 }
 
-.card .shadowText::before {
-    left: 0;
+ul:has(button.active) {
+    height: 100%;
+}
+
+ul:has(button.active) li:not(.top) {
     top: 0;
-    animation: var(--span-before-shift-animation);
-    animation-delay: 2s;
 }
 
-.card .inner-card {
-    animation: var(--shift-animation) 1.5s,1s 1s show-border forwards;
-}
-
-.card .status {
-    opacity: 0;
-    animation: 1s 1s show forwards;
-}
-
-@keyframes span-shift {
-    from {
-        left: 0;
-        top: .03em;
-    }
-
-    to {
-        left: -0.1em;
-        top: -0.05em;
-    }
-}
-
-@keyframes span-before-shift {
-    from {
-        left: 0;
-        top: 0;
-    }
-
-    to {
-        left: 0.1em;
-        top: 0.08em;
-    }
-}
-
-@keyframes shift {
-    from {
-        transform: translate(0px, 0px);
-    }
-
-    to {
-        transform: translate(-14px, -14px);
-    }
-}
-
-@media only screen and (max-width: 800px) {
-    @keyframes shift {
-        from {
-            transform: translate(0px, 0px);
-        }
-    
-        to {
-            transform: translate(-7px, -7px);
-        }
-    }
-}
-
-@keyframes show-border {
-    from {
-        border: 5px solid #20202000;
-    }
-
-    to {
-        border: 5px solid #202020;
-    }
-}
-
-@keyframes show {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+ul:has(button.active)::before {
+    top: 0;
 }

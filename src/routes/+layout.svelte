@@ -1,5 +1,15 @@
 <script>
-  import global from "../global.css";
-
+	import global from '../global.css';
+	import { Header } from '$lib/index.js';
 </script>
-<slot />
+
+<Header />
+
+<main>
+	<slot />
+</main>
+
+<footer></footer>
+
+<style>
+</style>
