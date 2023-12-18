@@ -1,23 +1,28 @@
 <script>
-	import { HamburgerMenu, ShadowText } from '$lib/index.js';
+	import { HamburgerMenu, ShadowText, ConnectBtn } from '$lib/index.js';
 </script>
 
 <nav>
 	<a href="/"><ShadowText fontsize="2rem" content="TP" /></a>
-	<HamburgerMenu />
+	
+	<div>
+		<ConnectBtn />
+		<HamburgerMenu />
+	</div>
 </nav>
 
 <style>
 	nav {
 		position: absolute;
 		display: flex;
+		align-items: center;
 		justify-content: space-between;
 		width: var(--default-width);
 		max-width: var(--default-max-width);
-		margin-top: 0.5rem;
+		margin-top: 2rem;
 	}
-	a {
+	div {
 		position: relative;
-		margin-top: 1rem;
+		display: flex;
 	}
 </style>

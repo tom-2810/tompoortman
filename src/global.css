@@ -23,15 +23,3 @@ a {
     all: unset;
     cursor: pointer;
 }
-
-ul:has(button.active) {
-    height: 100%;
-}
-
-ul:has(button.active) li:not(.top) {
-    top: 0;
-}
-
-ul:has(button.active)::before {
-    top: 0;
-}
