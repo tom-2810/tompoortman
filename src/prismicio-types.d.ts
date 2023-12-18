@@ -4,6 +4,62 @@ import type * as prismic from '@prismicio/client';
 
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
+/**
+ * Item in *connect → Connect link*
+ */
+export interface ConnectDocumentDataConnectLinkItem {
+	/**
+	 * Text field in *connect → Connect link*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: connect.connect_link[].text
+	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 */
+	text: prismic.KeyTextField;
+
+	/**
+	 * Link field in *connect → Connect link*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: connect.connect_link[].link
+	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 */
+	link: prismic.KeyTextField;
+}
+
+/**
+ * Content for connect documents
+ */
+interface ConnectDocumentData {
+	/**
+	 * Connect link field in *connect*
+	 *
+	 * - **Field Type**: Group
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: connect.connect_link[]
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#group
+	 */
+	connect_link: prismic.GroupField<Simplify<ConnectDocumentDataConnectLinkItem>>;
+}
+
+/**
+ * connect document from Prismic
+ *
+ * - **API ID**: `connect`
+ * - **Repeatable**: `false`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type ConnectDocument<Lang extends string = string> = prismic.PrismicDocumentWithoutUID<
+	Simplify<ConnectDocumentData>,
+	'connect',
+	Lang
+>;
+
 type HomeDocumentDataSlicesSlice = never;
 
 /**
@@ -90,7 +146,7 @@ export type HomeDocument<Lang extends string = string> = prismic.PrismicDocument
 	Lang
 >;
 
-export type AllDocumentTypes = HomeDocument;
+export type AllDocumentTypes = ConnectDocument | HomeDocument;
 
 declare module '@prismicio/client' {
 	interface CreateClient {
@@ -101,6 +157,14 @@ declare module '@prismicio/client' {
 	}
 
 	namespace Content {
-		export type { HomeDocument, HomeDocumentData, HomeDocumentDataSlicesSlice, AllDocumentTypes };
+		export type {
+			ConnectDocument,
+			ConnectDocumentData,
+			ConnectDocumentDataConnectLinkItem,
+			HomeDocument,
+			HomeDocumentData,
+			HomeDocumentDataSlicesSlice,
+			AllDocumentTypes
+		};
 	}
 }

@@ -1,0 +1,33 @@
+{
+	"id": "connect",
+	"label": "connect",
+	"format": "custom",
+	"repeatable": false,
+	"status": true,
+	"json": {
+		"Main": {
+			"connect_link": {
+				"type": "Group",
+				"config": {
+					"label": "Connect link",
+					"fields": {
+						"text": {
+							"type": "Text",
+							"config": {
+								"label": "Text",
+								"placeholder": ""
+							}
+						},
+						"link": {
+							"type": "Text",
+							"config": {
+								"label": "Link",
+								"placeholder": ""
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
