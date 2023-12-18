@@ -1,6 +1,10 @@
 <script>
 	import { ConnectBtn } from '$lib/index.js';
-	let active;
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		document.querySelector('#hamburger').checked = false;
+	});
 </script>
 
 <label for="hamburger" aria-label="hamburger menu"></label>
@@ -40,7 +44,7 @@
 		background-color: white;
 		aspect-ratio: 1/1;
 	}
-	input::before{
+	input::before {
 		position: absolute;
 		content: '=';
 	}

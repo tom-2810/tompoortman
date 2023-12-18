@@ -13,6 +13,6 @@
 		display: flex;
 		justify-content: center;
 		width: 100%;
-		/* height: 5rem; */
+		height: 6rem;
 	}
 </style>
