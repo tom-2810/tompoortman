@@ -4,7 +4,7 @@
 
 <nav>
 	<a href="/"><ShadowText fontsize="2rem" content="TP" /></a>
-	
+
 	<div>
 		<ConnectBtn />
 		<HamburgerMenu />
@@ -15,7 +15,6 @@
 	nav {
 		position: absolute;
 		display: flex;
-		align-items: center;
 		justify-content: space-between;
 		width: var(--default-width);
 		max-width: var(--default-max-width);
@@ -24,5 +23,9 @@
 	div {
 		position: relative;
 		display: flex;
+	}
+	a {
+		position: relative;
+		z-index: 1;
 	}
 </style>

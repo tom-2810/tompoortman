@@ -23,3 +23,7 @@ a {
     all: unset;
     cursor: pointer;
 }
+
+#menu.show {
+    right: 0 !important;
+}
