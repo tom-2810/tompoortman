@@ -31,5 +31,6 @@
 	a {
 		display: flex;
 		justify-content: space-between;
+		font-size: 1.1rem;
 	}
 </style>

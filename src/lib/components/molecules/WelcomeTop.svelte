@@ -5,7 +5,7 @@
 
 <div>
 	<h1>
-		<ShadowText fontsize="clamp(2.7rem, 8vw, 6rem)" content={data.name} position="relative" />
+		<ShadowText fontsize="clamp(3.2rem, 10vw, 7.5rem)" content={data.name} position="relative" />
 	</h1>
 	<ConnectExternalLinkList />
 </div>

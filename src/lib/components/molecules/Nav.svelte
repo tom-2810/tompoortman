@@ -3,7 +3,7 @@
 </script>
 
 <nav>
-	<a href="/"><ShadowText fontsize="2.5rem" content="TP" /></a>
+	<a href="/"><ShadowText fontsize="2.2rem" content="TP" /></a>
 
 	<div>
 		<ConnectBtn />
@@ -13,7 +13,7 @@
 
 <style>
 	nav {
-		position: absolute;
+		position: relative;
 		display: flex;
 		justify-content: space-between;
 		width: var(--default-width);

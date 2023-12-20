@@ -70,6 +70,7 @@
 		aspect-ratio: 1/1;
 		border: 2px solid black;
 		border-radius: 50%;
+		background-color: white;
 		margin-left: 1rem;
 		z-index: 1;
 	}
@@ -84,7 +85,7 @@
 	#menu {
 		position: fixed;
 		top: 0;
-		right: -110vw;
+		right: -150vw;
 		width: 100%;
 		height: 100dvh;
 		background-color: white;
@@ -94,7 +95,7 @@
 		align-items: center;
 		gap: 5rem;
 		border-left: 5px solid black;
-		transition: 0.5s;
+		transition: 0.7s;
 	}
 
 	#menu img {

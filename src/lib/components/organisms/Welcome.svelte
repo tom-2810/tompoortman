@@ -10,6 +10,6 @@
 
 <style>
     section {
-        margin-top: 8vw;
+        margin-top: clamp(4rem, 14vw, 10rem);
     }
 </style>
