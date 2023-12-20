@@ -3,7 +3,7 @@
 </script>
 
 <nav>
-	<a href="/"><ShadowText fontsize="2rem" content="TP" /></a>
+	<a href="/"><ShadowText fontsize="2.5rem" content="TP" /></a>
 
 	<div>
 		<ConnectBtn />
@@ -23,9 +23,10 @@
 	div {
 		position: relative;
 		display: flex;
+		z-index: 2;
 	}
 	a {
 		position: relative;
-		z-index: 1;
+		z-index: 3;
 	}
 </style>

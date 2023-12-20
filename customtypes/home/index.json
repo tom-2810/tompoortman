@@ -20,6 +20,13 @@
 					"placeholder": ""
 				}
 			},
+			"intro": {
+				"type": "Text",
+				"config": {
+					"label": "Intro",
+					"placeholder": ""
+				}
+			},
 			"slices": {
 				"type": "Slices",
 				"fieldset": "Slice Zone",

@@ -89,6 +89,17 @@ interface HomeDocumentData {
 	status: prismic.KeyTextField;
 
 	/**
+	 * Intro field in *home*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: home.intro
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 */
+	intro: prismic.KeyTextField;
+
+	/**
 	 * Slice Zone field in *home*
 	 *
 	 * - **Field Type**: Slice Zone
