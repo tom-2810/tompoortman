@@ -32,3 +32,21 @@ ul {
 #menu.show {
     right: 0 !important;
 }
+
+p span {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    top: .1em;
+    width: 1.7em;
+    height: 1em;
+    margin: 0 .3em;
+}
+
+p svg {
+    position: absolute;
+    max-height: 1.8em;
+    max-width: 2.5em;
+}

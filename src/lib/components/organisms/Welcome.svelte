@@ -10,6 +10,6 @@
 
 <style>
     section {
-        margin-top: 10rem;
+        margin-top: 22vh;
     }
 </style>

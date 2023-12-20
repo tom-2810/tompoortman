@@ -17,6 +17,7 @@
 		--span-before-left: 0.1em;
 	}
 	span {
+		display: block;
 		position: absolute;
 		color: #fff;
 		font-weight: 900;
