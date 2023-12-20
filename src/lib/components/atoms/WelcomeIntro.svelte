@@ -1,17 +1,17 @@
 <script>
-export let data
+	export let data;
 </script>
 
 <p>
-    {@html data.intro}
+	{@html data.intro}
 </p>
 
 <style>
-    p {
-        width: var(--default-width);
-        max-width: var(--default-max-width);
-        margin: 0 auto;
-        font-size: clamp(1.3rem, 6vw, 2.8rem);
-        /* line-height: 130%; */
-    }
+	p {
+		width: var(--default-width);
+		max-width: var(--default-max-width);
+		margin: var(--size-m) auto 0 auto;
+		font-size: clamp(1.3rem, 5.4vw, 3rem);
+        text-wrap: pretty;
+	}
 </style>

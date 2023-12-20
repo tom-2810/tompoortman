@@ -15,4 +15,10 @@
 	ul {
 		width: 12rem;
 	}
+
+	@media screen and (max-width: 600px) {
+		ul {
+			width: unset;
+		}
+	}
 </style>

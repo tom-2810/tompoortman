@@ -10,6 +10,6 @@
 
 <style>
     section {
-        margin-top: 22vh;
+        margin-top: 8vw;
     }
 </style>

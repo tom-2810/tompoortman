@@ -5,7 +5,7 @@
 
 <div>
 	<h1>
-		<ShadowText fontsize="6rem" content={data.name} position="relative" />
+		<ShadowText fontsize="clamp(2.7rem, 8vw, 6rem)" content={data.name} position="relative" />
 	</h1>
 	<ConnectExternalLinkList />
 </div>
@@ -15,10 +15,18 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: end;
-		border-bottom: 5px solid black;
+		border-bottom: 4px solid black;
 		padding-bottom: var(--size-m);
 		width: var(--default-width);
 		max-width: var(--default-max-width);
 		margin: 0 auto;
+	}
+
+	@media screen and (max-width: 600px) {
+		div {
+			flex-direction: column;
+			align-items: unset;
+            gap: var(--size-s);
+		}
 	}
 </style>
