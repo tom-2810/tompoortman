@@ -47,9 +47,9 @@
 <div id="menu">
 	<ul>
 		<li class="home"><a href="/">HOME</a></li>
-		<li class="work"><a href="#">WORK</a></li>
-		<li class="blog"><a href="#">BLOG</a></li>
-		<li class="contact"><a href="#">CONTACT</a></li>
+		<li class="work"><a href="/work">WORK</a></li>
+		<li class="blog"><a href="/blog">BLOG</a></li>
+		<li class="contact"><a href="#contact">CONTACT</a></li>
 	</ul>
 	<img src="/bean.gif" class="home active" alt="" />
 	<img src="/working.gif" class="work" alt="" />
