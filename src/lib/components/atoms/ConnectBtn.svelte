@@ -1,4 +1,4 @@
-<a href="#contact">
+<a href="#">
 	<div>Connect</div>
 </a>
 
