@@ -3,13 +3,13 @@
     export let data
 </script>
 
-<section>
+<section class="welcome">
     <WelcomeTop {data} />
     <WelcomeIntro {data} />
 </section>
 
 <style>
     section {
-        margin-top: clamp(4rem, 14vw, 10rem);
+        margin-top: clamp(3.8rem, 13vw, 9.5rem);
     }
 </style>

@@ -59,7 +59,7 @@
 <style>
 	.container {
 		position: relative;
-		padding: 3rem;
+		padding: 1.4rem 2.2rem;
 		border: 2px solid;
 		z-index: 0;
 	}
@@ -87,7 +87,7 @@
 	}
 	@media screen and (max-width: 800px) {
 		.container {
-			padding: 1.5rem;
+			padding: 1.4rem;
 		}
 	}
 </style>

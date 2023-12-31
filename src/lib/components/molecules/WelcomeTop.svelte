@@ -1,5 +1,5 @@
 <script>
-	import { ShadowText, ConnectExternalLinkList, ColoredContainer } from '$lib/index.js';
+	import { ShadowText, ConnectExternalLinkList, ColoredContainer, CursorTom } from '$lib/index.js';
 	export let data;
 
 	import { gsap } from 'gsap/dist/gsap';
@@ -7,24 +7,24 @@
 	import { onMount } from 'svelte';
 
 	onMount(() => {
-		gsap.fromTo('.coloredContainer', { x: -1200, y: -100 }, { x: 0, y: 0, duration: 2 });
+		gsap.fromTo('.coloredContainer', { x: -1200, y: -100 }, { x: 0, y: 0, duration: 2, delay: 1 });
 		gsap.fromTo(
-			'.coloredContainer .cursor',
-			{ left: '80%', top: '20%' },
-			{ left: '100%', top: 0, duration: 0.5, delay: 2 }
+			'.coloredContainer .cursorTom',
+			{ left: '90%', top: '20%' },
+			{ left: '100%', top: 0, duration: 0.5, delay: 3 }
 		);
 		gsap.fromTo(
 			'.coloredContainer',
-			{ width: document.querySelector('.coloredContainer').clientWidth - 40 },
-			{ width: document.querySelector('.coloredContainer').clientWidth, duration: 1, delay: 3 }
+			{ width: document.querySelector('.coloredContainer').clientWidth - 30 },
+			{ width: document.querySelector('.coloredContainer').clientWidth, duration: 1, delay: 4 }
 		);
-		gsap.to('.coloredContainer .cursor', {
+		gsap.to('.coloredContainer .cursorTom', {
 			left: -800,
 			top: -100,
 			duration: 1,
-			delay: 4.5,
+			delay: 5.5,
 			onComplete: () => {
-				gsap.to('.coloredContainer .cursor', { display: 'none' });
+				gsap.to('.coloredContainer .cursorTom', { display: 'none' });
 			}
 		});
 	});
@@ -42,7 +42,7 @@
 			</h1>
 		</ColoredContainer>
 
-		<div class="cursor"></div>
+		<CursorTom />
 	</div>
 	<ConnectExternalLinkList />
 </div>
@@ -63,12 +63,7 @@
 		position: relative;
 	}
 
-	.cursor {
-		position: absolute;
-		background-color: red;
-		height: 1rem;
-		width: 1rem;
-	}
+
 
 	@media screen and (max-width: 600px) {
 		.top {
