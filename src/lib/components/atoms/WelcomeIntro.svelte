@@ -11,7 +11,7 @@
 		width: var(--default-width);
 		max-width: var(--default-max-width);
 		margin: var(--size-m) auto 0 auto;
-		font-size: clamp(1.8rem, 5.4vw, 3.8rem);
-        text-wrap: pretty;
+		font-size: clamp(1.5rem, 5vw, 3.8rem);
+		text-wrap: pretty;
 	}
 </style>

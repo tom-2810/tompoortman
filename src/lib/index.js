@@ -4,6 +4,7 @@ export { default as ConnectBtn } from '$lib/components/atoms/ConnectBtn.svelte';
 export { default as HamburgerMenu } from '$lib/components/atoms/HamburgerMenu.svelte';
 export { default as ExternalLink } from '$lib/components/atoms/ExternalLink.svelte';
 export { default as WelcomeIntro } from '$lib/components/atoms/WelcomeIntro.svelte';
+export { default as ColoredContainer } from '$lib/components/atoms/ColoredContainer.svelte';
 
 export { default as Nav } from '$lib/components/molecules/Nav.svelte';
 export { default as ConnectExternalLinkList } from '$lib/components/molecules/ConnectExternalLinkList.svelte';
