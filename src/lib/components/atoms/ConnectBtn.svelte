@@ -21,7 +21,7 @@
 		border: 2px solid black;
 		background-color: white;
 		height: 100%;
-		transform: translate(-3px, -3px);
+		transform: translateY(-3px);
 		transition: 0.1s;
 	}
 	a:active div {

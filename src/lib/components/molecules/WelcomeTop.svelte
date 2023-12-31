@@ -15,13 +15,13 @@
 		);
 		gsap.fromTo(
 			'.coloredContainer',
-			{ width: document.querySelector('.coloredContainer').clientWidth - 50 },
+			{ width: document.querySelector('.coloredContainer').clientWidth - 40 },
 			{ width: document.querySelector('.coloredContainer').clientWidth, duration: 1, delay: 3 }
 		);
 		gsap.to('.coloredContainer .cursor', {
 			left: -800,
 			top: -100,
-			duration: .5,
+			duration: 1,
 			delay: 4.5,
 			onComplete: () => {
 				gsap.to('.coloredContainer .cursor', { display: 'none' });

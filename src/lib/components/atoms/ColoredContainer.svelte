@@ -60,7 +60,6 @@
 	.container {
 		position: relative;
 		padding: 3rem;
-        padding-right: 6rem;
 		border: 2px solid;
 		z-index: 0;
 	}
