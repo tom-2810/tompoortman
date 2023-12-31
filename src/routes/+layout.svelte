@@ -19,4 +19,7 @@
 <footer></footer>
 
 <style>
+	main {
+		overflow-x: hidden;
+	}
 </style>

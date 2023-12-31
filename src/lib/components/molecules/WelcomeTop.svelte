@@ -7,22 +7,22 @@
 	import { onMount } from 'svelte';
 
 	onMount(() => {
-		gsap.fromTo('.coloredContainer', { x: -1200, y: -100 }, { x: 0, y: 0, duration: 2, delay: 1 });
+		gsap.fromTo('.coloredContainer', { x: -1200, y: -100 }, { x: 0, y: 0, duration: 2, delay: 2 });
 		gsap.fromTo(
 			'.coloredContainer .cursorTom',
 			{ left: '90%', top: '20%' },
-			{ left: '100%', top: 0, duration: 0.5, delay: 3 }
+			{ left: '100%', top: 0, duration: 0.5, delay: 4 }
 		);
 		gsap.fromTo(
 			'.coloredContainer',
 			{ width: document.querySelector('.coloredContainer').clientWidth - 30 },
-			{ width: document.querySelector('.coloredContainer').clientWidth, duration: 1, delay: 4 }
+			{ width: document.querySelector('.coloredContainer').clientWidth, duration: 1, delay: 5 }
 		);
 		gsap.to('.coloredContainer .cursorTom', {
 			left: -800,
 			top: -100,
 			duration: 1,
-			delay: 5.5,
+			delay: 6.5,
 			onComplete: () => {
 				gsap.to('.coloredContainer .cursorTom', { display: 'none' });
 			}
@@ -35,7 +35,7 @@
 		<ColoredContainer baseColor="#23B1FF">
 			<h1>
 				<ShadowText
-					fontsize="clamp(3.2rem, 10vw, 7.5rem)"
+					fontsize="clamp(2.8rem, 10vw, 7.5rem)"
 					content={data.name}
 					position="relative"
 				/>

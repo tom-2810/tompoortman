@@ -14,7 +14,7 @@
             {
                 top: "-100vh",
                 duration: 0.6,
-                delay: 1,
+                delay: 2,
                 ease: "power1.inOut",
                 onComplete: () => {
                     gsap.set(".page-transition", { display: "none" });
