@@ -5,6 +5,70 @@ import type * as prismic from '@prismicio/client';
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
 /**
+ * Content for Blog documents
+ */
+interface BlogDocumentData {
+	/**
+	 * Title field in *Blog*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: blog.title
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 */
+	title: prismic.KeyTextField;
+
+	/**
+	 * Color field in *Blog*
+	 *
+	 * - **Field Type**: Color
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: blog.color
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#color
+	 */
+	color: prismic.ColorField;
+
+	/**
+	 * Intro field in *Blog*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: blog.intro
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 */
+	intro: prismic.KeyTextField;
+
+	/**
+	 * Image field in *Blog*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: blog.image
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#image
+	 */
+	image: prismic.ImageField<never>;
+}
+
+/**
+ * Blog document from Prismic
+ *
+ * - **API ID**: `blog`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type BlogDocument<Lang extends string = string> = prismic.PrismicDocumentWithUID<
+	Simplify<BlogDocumentData>,
+	'blog',
+	Lang
+>;
+
+/**
  * Item in *connect → Connect link*
  */
 export interface ConnectDocumentDataConnectLinkItem {
@@ -60,7 +124,7 @@ export type ConnectDocument<Lang extends string = string> = prismic.PrismicDocum
 	Lang
 >;
 
-type HomeDocumentDataSlicesSlice = never;
+type HomeDocumentDataSlicesSlice = FeaturedProjectsSlice;
 
 /**
  * Content for home documents
@@ -157,7 +221,105 @@ export type HomeDocument<Lang extends string = string> = prismic.PrismicDocument
 	Lang
 >;
 
-export type AllDocumentTypes = ConnectDocument | HomeDocument;
+/**
+ * Content for Project documents
+ */
+interface ProjectDocumentData {
+	/**
+	 * Title field in *Project*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: project.title
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 */
+	title: prismic.KeyTextField;
+
+	/**
+	 * Client field in *Project*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: project.client
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 */
+	client: prismic.KeyTextField;
+
+	/**
+	 * Image field in *Project*
+	 *
+	 * - **Field Type**: Image
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: project.image
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#image
+	 */
+	image: prismic.ImageField<never>;
+}
+
+/**
+ * Project document from Prismic
+ *
+ * - **API ID**: `project`
+ * - **Repeatable**: `true`
+ * - **Documentation**: https://prismic.io/docs/custom-types
+ *
+ * @typeParam Lang - Language API ID of the document.
+ */
+export type ProjectDocument<Lang extends string = string> = prismic.PrismicDocumentWithUID<
+	Simplify<ProjectDocumentData>,
+	'project',
+	Lang
+>;
+
+export type AllDocumentTypes = BlogDocument | ConnectDocument | HomeDocument | ProjectDocument;
+
+/**
+ * Primary content in *FeaturedProjects → Items*
+ */
+export interface FeaturedProjectsSliceDefaultItem {
+	/**
+	 * Project field in *FeaturedProjects → Items*
+	 *
+	 * - **Field Type**: Content Relationship
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: featured_projects.items[].project
+	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 */
+	project: prismic.ContentRelationshipField<'project'>;
+}
+
+/**
+ * Default variation for FeaturedProjects Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FeaturedProjectsSliceDefault = prismic.SharedSliceVariation<
+	'default',
+	Record<string, never>,
+	Simplify<FeaturedProjectsSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *FeaturedProjects*
+ */
+type FeaturedProjectsSliceVariation = FeaturedProjectsSliceDefault;
+
+/**
+ * FeaturedProjects Shared Slice
+ *
+ * - **API ID**: `featured_projects`
+ * - **Description**: FeaturedProjects
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FeaturedProjectsSlice = prismic.SharedSlice<
+	'featured_projects',
+	FeaturedProjectsSliceVariation
+>;
 
 declare module '@prismicio/client' {
 	interface CreateClient {
@@ -169,13 +331,21 @@ declare module '@prismicio/client' {
 
 	namespace Content {
 		export type {
+			BlogDocument,
+			BlogDocumentData,
 			ConnectDocument,
 			ConnectDocumentData,
 			ConnectDocumentDataConnectLinkItem,
 			HomeDocument,
 			HomeDocumentData,
 			HomeDocumentDataSlicesSlice,
-			AllDocumentTypes
+			ProjectDocument,
+			ProjectDocumentData,
+			AllDocumentTypes,
+			FeaturedProjectsSlice,
+			FeaturedProjectsSliceDefaultItem,
+			FeaturedProjectsSliceVariation,
+			FeaturedProjectsSliceDefault
 		};
 	}
 }

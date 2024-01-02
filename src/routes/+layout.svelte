@@ -2,7 +2,7 @@
 	import global from '../global.css';
 	import { Header, PageTransitionsContainer } from '$lib/index.js';
 	import { setContext } from 'svelte';
-    import { page } from "$app/stores";
+	import { page } from '$app/stores';
 
 	export let data;
 	setContext('connect-links', data);
