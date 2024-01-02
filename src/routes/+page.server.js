@@ -2,7 +2,10 @@ import { createClient } from '$lib/prismicio';
 
 export async function load({ fetch, request }) {
 	const client = createClient({ fetch, request });
-	const document = await client.getSingle('home');
+	const page = await client.getSingle('home', {
+		fetchLinks: ['project.title', 'project.client', 'project.image']
+	});
+	// const blogs = await client.getAllByType('blog');
 
-	return document.data;
+	return { page: page.data };
 }
