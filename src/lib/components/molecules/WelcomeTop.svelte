@@ -35,7 +35,7 @@
 		<ColoredContainer baseColor="#23B1FF">
 			<h1>
 				<ShadowText
-					fontsize="clamp(2.8rem, 10vw, 7.5rem)"
+					fontsize="clamp(2.8rem, 9vw, 6rem)"
 					content={data.name}
 					position="relative"
 				/>

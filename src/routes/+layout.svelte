@@ -20,6 +20,6 @@
 
 <style>
 	main {
-		overflow-x: hidden;
+		overflow: hidden;
 	}
 </style>
