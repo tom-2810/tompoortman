@@ -33,6 +33,13 @@
 					"constraint": {},
 					"thumbnails": []
 				}
+			},
+			"color": {
+				"type": "Color",
+				"config": {
+					"label": "Color",
+					"placeholder": ""
+				}
 			}
 		}
 	}

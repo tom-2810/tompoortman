@@ -257,6 +257,17 @@ interface ProjectDocumentData {
 	 * - **Documentation**: https://prismic.io/docs/field#image
 	 */
 	image: prismic.ImageField<never>;
+
+	/**
+	 * Color field in *Project*
+	 *
+	 * - **Field Type**: Color
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: project.color
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#color
+	 */
+	color: prismic.ColorField;
 }
 
 /**

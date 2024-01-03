@@ -7,6 +7,8 @@
 	import { onMount } from 'svelte';
 
 	onMount(() => {
+		const defaultContainerWidth = document.querySelector('.coloredContainer').clientWidth;
+
 		gsap.fromTo('.coloredContainer', { x: -1200, y: -100 }, { x: 0, y: 0, duration: 2, delay: 2 });
 		gsap.fromTo(
 			'.coloredContainer .cursorTom',
@@ -15,8 +17,8 @@
 		);
 		gsap.fromTo(
 			'.coloredContainer',
-			{ width: document.querySelector('.coloredContainer').clientWidth - 30 },
-			{ width: document.querySelector('.coloredContainer').clientWidth, duration: 1, delay: 5 }
+			{ width: defaultContainerWidth - 30 },
+			{ width: defaultContainerWidth, duration: 1, delay: 5 }
 		);
 		gsap.to('.coloredContainer .cursorTom', {
 			left: -800,
@@ -34,11 +36,7 @@
 	<div class="coloredContainer">
 		<ColoredContainer baseColor="#23B1FF">
 			<h1>
-				<ShadowText
-					fontsize="clamp(2.8rem, 9vw, 6rem)"
-					content={data.name}
-					position="relative"
-				/>
+				<ShadowText fontsize="clamp(2.8rem, 9vw, 6rem)" content={data.name} position="relative" />
 			</h1>
 		</ColoredContainer>
 
@@ -62,8 +60,6 @@
 	.coloredContainer {
 		position: relative;
 	}
-
-
 
 	@media screen and (max-width: 600px) {
 		.top {

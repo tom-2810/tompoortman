@@ -19,3 +19,4 @@ export { default as ProjectCard } from '$lib/components/molecules/ProjectCard.sv
 
 export { default as Header } from '$lib/components/organisms/Header.svelte';
 export { default as Welcome } from '$lib/components/organisms/Welcome.svelte';
+export { default as ProjectsOverview } from '$lib/components/organisms/ProjectsOverview.svelte';
