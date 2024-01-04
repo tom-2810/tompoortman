@@ -27,10 +27,11 @@ a {
 
 a,
 a * {
-    letter-spacing: -1.1px;
+    letter-spacing: -.8px;
 }
 
 p {
+    letter-spacing: normal;
     font-weight: 500;
     line-height: 110%;
 }

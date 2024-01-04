@@ -43,7 +43,7 @@
 	}
 	section .image {
 		position: relative;
-		margin-bottom: 0.5rem;
+		margin-bottom: 1rem;
 		border-radius: 6px;
 	}
 	section:hover .image img {
@@ -59,7 +59,7 @@
 		border-radius: 6px;
 		background-color: white;
 		width: 100%;
-		aspect-ratio: 16/10;
+		aspect-ratio: 16/11;
 		object-fit: cover;
 	}
 	div {
