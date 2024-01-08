@@ -1,15 +1,15 @@
 <script>
 	import { WelcomeTop, WelcomeIntro } from '$lib/index.js';
-    export let data
+	export let data;
 </script>
 
 <section class="welcome">
-    <WelcomeTop {data} />
-    <WelcomeIntro {data} />
+	<WelcomeTop {data} />
+	<WelcomeIntro {data} />
 </section>
 
 <style>
-    section {
-        padding-top: clamp(3.8rem, 12vw, 9rem);
-    }
+	section {
+		padding-top: 18rem;
+	}
 </style>

@@ -38,7 +38,7 @@
 	</h1>
 
 	<div class="status">
-		<Status html={'<span>Frontend</span> Designer & Developer'} />
+		<Status html={data.status} />
 	</div>
 </div>
 

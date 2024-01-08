@@ -8,11 +8,8 @@
 
 <style>
 	p {
-		width: var(--default-width);
-		max-width: var(--default-max-width);
-		margin: var(--size-m) auto 0 auto;
-		font-size: clamp(1.8rem, 7vw, 3.8rem);
-		text-wrap: pretty;
+		margin-top: var(--size-m);
+		font-size: clamp(1.8rem, 5vw, 2.5rem);
 		letter-spacing: -3.6px;
 	}
 </style>
