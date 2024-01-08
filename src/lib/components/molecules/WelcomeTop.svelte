@@ -1,5 +1,5 @@
 <script>
-	import { ShadowText, ConnectExternalLinkList, ColoredContainer, CursorTom } from '$lib/index.js';
+	import { ShadowText, Status } from '$lib/index.js';
 	export let data;
 
 	import { gsap } from 'gsap/dist/gsap';
@@ -33,36 +33,35 @@
 </script>
 
 <div class="top">
-	<div class="coloredContainer">
-		<ColoredContainer baseColor="#23B1FF">
-			<h1>
-				<ShadowText fontsize="clamp(2.8rem, 9vw, 6rem)" content={data.name} position="relative" />
-			</h1>
-		</ColoredContainer>
+	<h1>
+		<ShadowText fontsize="clamp(2.8rem, 9vw, 6rem)" content={data.name} position="relative" />
+	</h1>
 
-		<CursorTom />
+	<div class="status">
+		<Status html={'<span>Frontend</span> Designer & Developer'} />
 	</div>
-	<ConnectExternalLinkList />
 </div>
 
 <style>
 	.top {
-		display: flex;
-		justify-content: space-between;
+		display: grid;
 		align-items: end;
+		grid-template-columns: repeat(4, 1fr);
 		border-bottom: 4px solid black;
 		padding-bottom: var(--size-m);
-		width: var(--default-width);
-		max-width: var(--default-max-width);
-		margin: 0 auto;
 	}
-
-	.coloredContainer {
+	h1 {
 		position: relative;
+		left: 1.15rem;
+		grid-column: span 3;
+	}
+	.status {
+		grid-column: 4/5;
 	}
 
 	@media screen and (max-width: 600px) {
 		.top {
+			display: flex;
 			flex-direction: column;
 			align-items: unset;
 			gap: var(--size-s);

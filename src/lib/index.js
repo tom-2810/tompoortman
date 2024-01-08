@@ -10,6 +10,8 @@ export { default as PageTransition } from '$lib/components/atoms/PageTransition.
 export { default as PageTransitionsContainer } from '$lib/components/atoms/PageTransitionsContainer.svelte';
 export { default as CardTitle } from '$lib/components/atoms/CardTitle.svelte';
 export { default as CardSubtitle } from '$lib/components/atoms/CardSubtitle.svelte';
+export { default as Status } from '$lib/components/atoms/Status.svelte';
+export { default as Bg } from '$lib/components/atoms/Bg.svelte';
 
 export { default as Nav } from '$lib/components/molecules/Nav.svelte';
 export { default as ConnectExternalLinkList } from '$lib/components/molecules/ConnectExternalLinkList.svelte';
