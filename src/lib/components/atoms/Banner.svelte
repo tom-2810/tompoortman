@@ -4,10 +4,10 @@
 
 <div class="banner">
 	<div class="banner-content">
-		{@html html}{@html html}{@html html}{@html html}{@html html}{@html html}{@html html}
+		{@html html}{@html html}{@html html}{@html html}{@html html}{@html html}
 	</div>
 	<div class="banner-content">
-		{@html html}{@html html}{@html html}{@html html}{@html html}{@html html}{@html html}
+		{@html html}{@html html}{@html html}{@html html}{@html html}{@html html}
 	</div>
 </div>
 
@@ -21,7 +21,6 @@
 		background-color: #202020;
 		border: 2px solid white;
 		box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.1);
-		font-size: 1.8rem;
 		flex-shrink: 0;
 		display: flex;
 		overflow: hidden;
@@ -30,10 +29,11 @@
 	}
 	.banner-content {
 		position: relative;
-		top: -2px;
 		display: flex;
 		flex-direction: row;
-		gap: 1rem;
+		gap: 2rem;
+		font-size: 1.2rem;
+		font-weight: 500;
 		flex-shrink: 0;
 		animation: scroll 20s linear infinite;
 		color: white;

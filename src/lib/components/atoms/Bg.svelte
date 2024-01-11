@@ -12,7 +12,6 @@
 		justify-content: space-between;
 		position: absolute;
 		top: 0;
-		width: 100%;
 		height: 100%;
 		background-color: white;
 		width: var(--default-width);
@@ -27,9 +26,9 @@
 		background: repeating-linear-gradient(
 			to bottom,
 			transparent,
-			transparent 10px,
-			#ccc 10px,
-			#ccc 20px
+			transparent 5px,
+			#cdcdcd 5px,
+			#cdcdcd 10px
 		);
 	}
 </style>

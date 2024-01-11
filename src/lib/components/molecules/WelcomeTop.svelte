@@ -36,7 +36,7 @@
 	<Banner html={data.banner} />
 	<div class="content">
 		<h1>
-			<ShadowText fontsize="clamp(2.8rem, 9vw, 6.5rem)" content={data.name} position="relative" />
+			<ShadowText fontsize="clamp(2.8rem, 15vw, 6.9rem)" content={data.name} position="relative" />
 		</h1>
 
 		<div class="status">
@@ -59,7 +59,7 @@
 	}
 	h1 {
 		position: relative;
-		left: 1.15rem;
+		margin-left: clamp(4px, 3.8vw, 1.4rem);
 		grid-column: span 3;
 	}
 	.status {

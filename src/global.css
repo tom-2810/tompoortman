@@ -33,6 +33,7 @@ a * {
 p {
     letter-spacing: normal;
     font-weight: 500;
+    letter-spacing: -.055em;
     line-height: 110%;
 }
 
@@ -49,13 +50,7 @@ ul {
 }
 
 .banner-content>div::before {
-    content: url("sparkle.svg");
+    content: url("/sparkle.svg");
     position: relative;
     top: 4px;
-}
-
-@media screen and (max-width: 800px) {
-    p {
-        letter-spacing: -1.6px;
-    }
 }
