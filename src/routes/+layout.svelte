@@ -8,8 +8,7 @@
 	setContext('connect-links', data);
 </script>
 
-<!-- <PageTransitionsContainer refresh={$page.url.pathname} /> -->
-
+<PageTransitionsContainer refresh={$page.url.pathname} />
 
 <Header />
 
@@ -24,8 +23,16 @@
 	main {
 		position: relative;
 		overflow: hidden;
-		
+		animation: 0.2s fade-in forwards;
 		min-height: 100vh;
-		/* width: 50rem; */
+	}
+	@keyframes fade-in {
+		from {
+			opacity: 0;
+		}
+
+		to {
+			opacity: 1;
+		}
 	}
 </style>

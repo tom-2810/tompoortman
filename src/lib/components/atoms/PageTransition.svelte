@@ -60,7 +60,7 @@
     });
 </script>
 
-<div class="page-transition"><img src="./emojis/slightly-smiling-face.png" alt=""></div>
+<div class="page-transition"><img src="./emojis/waving-hand.png" alt=""></div>
 
 <style>
     div {
@@ -71,7 +71,9 @@
         top: 0vh;
         height: 100vh;
         width: 100%;
-        background-color: rgb(49, 49, 49);
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        background-color: white;
         z-index: 3;
     }
 </style>
