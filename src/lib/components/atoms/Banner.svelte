@@ -35,7 +35,7 @@
 		font-size: 1.2rem;
 		font-weight: 500;
 		flex-shrink: 0;
-		animation: scroll 20s linear infinite;
+		animation: scroll 90s linear infinite;
 		color: white;
 	}
 

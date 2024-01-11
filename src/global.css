@@ -6,7 +6,7 @@
     --size-l: 1.5rem;
     --size-xl: 3rem;
 
-    --default-width: 95%;
+    --default-width: 97%;
     --default-max-width: 82rem;
 }
 
@@ -27,7 +27,8 @@ a {
 
 a,
 a * {
-    letter-spacing: -.8px;
+    letter-spacing: -.04em;
+    font-weight: 500;
 }
 
 p {

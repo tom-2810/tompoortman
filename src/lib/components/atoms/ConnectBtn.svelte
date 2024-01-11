@@ -4,25 +4,22 @@
 
 <style>
 	a {
-		all: unset;
-		position: relative;
-		display: flex;
 		border-radius: 3px;
 		background-color: black;
-		width: fit-content;
-		height: 2.2rem;
-		cursor: pointer;
-		z-index: 1;
+		height: 2.1rem;
+		z-index: -1;
 	}
 	div {
+		display: flex;
+		align-items: center;
 		position: relative;
-		padding: 0.2em 0.7em;
-		border-radius: 3px;
-		border: 2px solid black;
+		padding: 0 0.75rem;
+		height: 2.1rem;
+		font-size: 1.05rem;
 		background-color: white;
-		height: 100%;
+		border: 2px solid black;
+		border-radius: 3px;
 		transform: translateY(-2px);
-		transition: 0.08s;
 	}
 	a:active div {
 		transform: translate(0);
