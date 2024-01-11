@@ -27,6 +27,13 @@
 					"placeholder": ""
 				}
 			},
+			"banner": {
+				"type": "Text",
+				"config": {
+					"label": "Banner",
+					"placeholder": ""
+				}
+			},
 			"slices": {
 				"type": "Slices",
 				"fieldset": "Slice Zone",

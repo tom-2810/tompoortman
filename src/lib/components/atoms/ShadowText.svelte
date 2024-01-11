@@ -21,7 +21,7 @@
 		position: absolute;
 		color: #fff;
 		font-weight: 900;
-		line-height: 100%;
+		line-height: 107%;
 		width: min-content;
 		transition: 0.1s;
 	}

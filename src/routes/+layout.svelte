@@ -23,10 +23,9 @@
 <style>
 	main {
 		position: relative;
-		/* overflow: hidden; */
-		width: var(--default-width);
-		max-width: var(--default-max-width);
-		margin: 0 auto;
+		overflow: hidden;
+		
+		min-height: 100vh;
 		/* width: 50rem; */
 	}
 </style>

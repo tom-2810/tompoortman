@@ -1,5 +1,5 @@
 <script>
-	import { ShadowText, Status } from '$lib/index.js';
+	import { ShadowText, Status, Banner } from '$lib/index.js';
 	export let data;
 
 	import { gsap } from 'gsap/dist/gsap';
@@ -33,17 +33,24 @@
 </script>
 
 <div class="top">
-	<h1>
-		<ShadowText fontsize="clamp(2.8rem, 9vw, 6rem)" content={data.name} position="relative" />
-	</h1>
+	<Banner html={data.banner} />
+	<div class="content">
+		<h1>
+			<ShadowText fontsize="clamp(2.8rem, 9vw, 6.5rem)" content={data.name} position="relative" />
+		</h1>
 
-	<div class="status">
-		<Status html={data.status} />
+		<div class="status">
+			<Status html={data.status} />
+		</div>
 	</div>
 </div>
 
 <style>
 	.top {
+		display: flex;
+		flex-direction: column;
+	}
+	.content {
 		display: grid;
 		align-items: end;
 		grid-template-columns: repeat(4, 1fr);
@@ -60,7 +67,7 @@
 	}
 
 	@media screen and (max-width: 600px) {
-		.top {
+		.content {
 			display: flex;
 			flex-direction: column;
 			align-items: unset;

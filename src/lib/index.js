@@ -12,6 +12,7 @@ export { default as CardTitle } from '$lib/components/atoms/CardTitle.svelte';
 export { default as CardSubtitle } from '$lib/components/atoms/CardSubtitle.svelte';
 export { default as Status } from '$lib/components/atoms/Status.svelte';
 export { default as Bg } from '$lib/components/atoms/Bg.svelte';
+export { default as Banner } from '$lib/components/atoms/Banner.svelte';
 
 export { default as Nav } from '$lib/components/molecules/Nav.svelte';
 export { default as ConnectExternalLinkList } from '$lib/components/molecules/ConnectExternalLinkList.svelte';
