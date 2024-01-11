@@ -31,4 +31,10 @@
 			#cdcdcd 10px
 		);
 	}
+
+	@media screen and (max-width: 800px) {
+		.bg > div:nth-child(1), .bg > div:nth-child(2), .bg > div:nth-child(3) {
+			display: none;
+		} 
+	}
 </style>

@@ -36,7 +36,7 @@
 	<Banner html={data.banner} />
 	<div class="content">
 		<h1>
-			<ShadowText fontsize="clamp(2.8rem, 15vw, 6.9rem)" content={data.name} position="relative" />
+			<ShadowText fontsize="clamp(2.9rem, 12.5vw, 6.9rem)" content={data.name} position="relative" />
 		</h1>
 
 		<div class="status">
@@ -66,7 +66,7 @@
 		grid-column: 4/5;
 	}
 
-	@media screen and (max-width: 600px) {
+	@media screen and (max-width: 800px) {
 		.content {
 			display: flex;
 			flex-direction: column;
