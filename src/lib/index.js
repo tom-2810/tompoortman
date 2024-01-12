@@ -1,6 +1,6 @@
 // place files you want to import through the `$lib` alias in this folder.
 export { default as ShadowText } from '$lib/components/atoms/ShadowText.svelte';
-export { default as ConnectBtn } from '$lib/components/atoms/ConnectBtn.svelte';
+export { default as Button } from '$lib/components/atoms/Button.svelte';
 export { default as HamburgerMenu } from '$lib/components/atoms/HamburgerMenu.svelte';
 export { default as ExternalLink } from '$lib/components/atoms/ExternalLink.svelte';
 export { default as WelcomeIntro } from '$lib/components/atoms/WelcomeIntro.svelte';

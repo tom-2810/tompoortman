@@ -1,5 +1,4 @@
 <script>
-	import { ConnectBtn } from '$lib/index.js';
 	import { onMount } from 'svelte';
 
 	onMount(() => {

@@ -3,7 +3,7 @@ import { createClient } from '$lib/prismicio';
 export async function load({ fetch, request }) {
 	const client = createClient({ fetch, request });
 	const page = await client.getSingle('home', {
-		fetchLinks: ['project.title', 'project.client', 'project.image', 'project.color']
+		fetchLinks: ['project.title', 'project.services', 'project.image', 'project.color']
 	});
 	const blogs = await client.getAllByType('blog', {
 		limit: 3,

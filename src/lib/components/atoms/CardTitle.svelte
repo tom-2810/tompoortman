@@ -7,7 +7,7 @@
 <style>
 	span {
 		display: block;
-		font-size: 2rem;
+		font-size: 1.8rem;
 		font-weight: 500;
 		line-height: 100%;
 	}

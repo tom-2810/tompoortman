@@ -25,7 +25,7 @@
 		margin: 0 auto;
 	}
 	h2 {
-		font-size: 6rem;
+		font-size: clamp(3rem, 12vw, 6rem);
 		width: min-content;
 		line-height: 107%;
 		font-weight: 500;
@@ -33,10 +33,11 @@
 	ul {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		row-gap: 5rem;
+		row-gap: 3rem;
 	}
 	ul li {
 		grid-column: span 2;
+		width: clamp(15rem, 45vw, 30rem);
 	}
 	ul li:nth-child(2n) {
 		margin-left: auto;
@@ -49,13 +50,12 @@
 			flex-direction: column;
 		}
 	}
-
-	@media screen and (max-width: 800px) {
+	@media screen and (max-width: 700px) {
 		ul {
-			align-items: center;
+			row-gap: 1rem;
 		}
-		ul li:nth-child(2n) {
-			margin-left: unset;
+		ul li {
+			width: 100%;
 		}
 	}
 </style>

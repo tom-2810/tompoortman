@@ -1,12 +1,12 @@
 <script>
-	import { HamburgerMenu, ShadowText, ConnectBtn } from '$lib/index.js';
+	import { HamburgerMenu, ShadowText, Button } from '$lib/index.js';
 </script>
 
 <nav>
 	<a href="/"><ShadowText fontsize="2.2rem" content="TP" /></a>
 
 	<div>
-		<ConnectBtn />
+		<Button link={'/connect'} text={'Connect'} />
 		<HamburgerMenu />
 	</div>
 </nav>

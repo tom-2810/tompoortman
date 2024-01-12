@@ -7,28 +7,27 @@
 	import { onMount } from 'svelte';
 
 	onMount(() => {
-		const defaultContainerWidth = document.querySelector('.coloredContainer').clientWidth;
-
-		gsap.fromTo('.coloredContainer', { x: -1200, y: -100 }, { x: 0, y: 0, duration: 2, delay: 2 });
-		gsap.fromTo(
-			'.coloredContainer .cursorTom',
-			{ left: '90%', top: '20%' },
-			{ left: '100%', top: 0, duration: 0.5, delay: 4 }
-		);
-		gsap.fromTo(
-			'.coloredContainer',
-			{ width: defaultContainerWidth - 30 },
-			{ width: defaultContainerWidth, duration: 1, delay: 5 }
-		);
-		gsap.to('.coloredContainer .cursorTom', {
-			left: -800,
-			top: -100,
-			duration: 1,
-			delay: 6.5,
-			onComplete: () => {
-				gsap.to('.coloredContainer .cursorTom', { display: 'none' });
-			}
-		});
+		// const defaultContainerWidth = document.querySelector('.coloredContainer').clientWidth;
+		// gsap.fromTo('.coloredContainer', { x: -1200, y: -100 }, { x: 0, y: 0, duration: 2, delay: 2 });
+		// gsap.fromTo(
+		// 	'.coloredContainer .cursorTom',
+		// 	{ left: '90%', top: '20%' },
+		// 	{ left: '100%', top: 0, duration: 0.5, delay: 4 }
+		// );
+		// gsap.fromTo(
+		// 	'.coloredContainer',
+		// 	{ width: defaultContainerWidth - 30 },
+		// 	{ width: defaultContainerWidth, duration: 1, delay: 5 }
+		// );
+		// gsap.to('.coloredContainer .cursorTom', {
+		// 	left: -800,
+		// 	top: -100,
+		// 	duration: 1,
+		// 	delay: 6.5,
+		// 	onComplete: () => {
+		// 		gsap.to('.coloredContainer .cursorTom', { display: 'none' });
+		// 	}
+		// });
 	});
 </script>
 
@@ -36,7 +35,11 @@
 	<Banner html={data.banner} />
 	<div class="content">
 		<h1>
-			<ShadowText fontsize="clamp(2.9rem, 12.5vw, 6.9rem)" content={data.name} position="relative" />
+			<ShadowText
+				fontsize="clamp(2.9rem, 12.5vw, 6.9rem)"
+				content={data.name}
+				position="relative"
+			/>
 		</h1>
 
 		<div class="status">

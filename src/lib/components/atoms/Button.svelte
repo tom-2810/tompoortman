@@ -1,5 +1,10 @@
-<a href="#">
-	<div>Connect</div>
+<script>
+	export let link;
+	export let text;
+</script>
+
+<a href={link}>
+	<div>{text}</div>
 </a>
 
 <style>

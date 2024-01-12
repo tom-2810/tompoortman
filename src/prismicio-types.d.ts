@@ -279,6 +279,17 @@ interface ProjectDocumentData {
 	 * - **Documentation**: https://prismic.io/docs/field#color
 	 */
 	color: prismic.ColorField;
+
+	/**
+	 * Services field in *Project*
+	 *
+	 * - **Field Type**: Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: project.services
+	 * - **Tab**: Main
+	 * - **Documentation**: https://prismic.io/docs/field#key-text
+	 */
+	services: prismic.KeyTextField;
 }
 
 /**

@@ -40,6 +40,13 @@
 					"label": "Color",
 					"placeholder": ""
 				}
+			},
+			"services": {
+				"type": "Text",
+				"config": {
+					"label": "Services",
+					"placeholder": ""
+				}
 			}
 		}
 	}
