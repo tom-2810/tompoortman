@@ -87,7 +87,7 @@
 		border-radius: 6px;
 		background-color: white;
 		width: 100%;
-		aspect-ratio: 16/11;
+		aspect-ratio: 15/11;
 		object-fit: cover;
 	}
 	div {

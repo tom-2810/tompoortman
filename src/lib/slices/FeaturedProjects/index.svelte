@@ -41,7 +41,7 @@
 	}
 	ul li {
 		grid-column: span 2;
-		width: clamp(15rem, 45vw, 30rem);
+		width: clamp(15rem, 45vw, 35rem);
 	}
 	ul li:nth-child(2n) {
 		margin-left: auto;
