@@ -54,7 +54,7 @@
 	}
 
 	span::before {
-		top: 0.09em;
+		top: 0.08em;
 		left: 0.1em;
 	}
 
