@@ -10,7 +10,7 @@
 
 <style>
 	section {
-		padding-top: clamp(12rem, 16vw, 24rem);
+		padding-top: clamp(12rem, 14vw, 24rem);
 		width: var(--default-width);
 		max-width: var(--default-max-width);
 		margin: 0 auto;
