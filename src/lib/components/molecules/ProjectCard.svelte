@@ -71,7 +71,7 @@
 		border-radius: 6px;
 	}
 	section:hover .image img {
-		transform: translateY(-6px);
+		transform: translateY(-8px);
 		transition: 0.1s;
 	}
 	section:hover {
