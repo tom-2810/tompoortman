@@ -4,7 +4,7 @@
 
 	let items = slice.items;
 
-	import { ProjectCard } from '$lib/index.js';
+	import { ProjectCard, Button } from '$lib/index.js';
 </script>
 
 <section data-slice-type={slice.slice_type} data-slice-variation={slice.variation}>
@@ -16,6 +16,10 @@
 			</li>
 		{/each}
 	</ul>
+	<div class="more">
+
+		<Button link={'/projects'} text={'All projects'} />
+	</div>
 </section>
 
 <style>
@@ -25,9 +29,9 @@
 		margin: 0 auto;
 	}
 	h2 {
-		font-size: clamp(3rem, 12vw, 6rem);
+		font-size: clamp(3rem, 12vw, 6.9rem);
 		width: min-content;
-		line-height: 107%;
+		line-height: 100%;
 		font-weight: 500;
 	}
 	ul {
@@ -42,6 +46,12 @@
 	ul li:nth-child(2n) {
 		margin-left: auto;
 		grid-column: 2/3;
+	}
+
+	.more {
+		width: fit-content;
+		margin-inline: auto;
+		margin-top: 2rem;
 	}
 
 	@media screen and (max-width: 1050px) {

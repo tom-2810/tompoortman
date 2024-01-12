@@ -78,6 +78,9 @@
 		background-color: rgb(250, 250, 250);
 		--c-arrow: white;
 	}
+	a:active .image img {
+		transform: translateY(0);
+	}
 	img {
 		transition: 0.2s;
 		border: 3px solid #202020;

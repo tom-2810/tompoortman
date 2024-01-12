@@ -47,4 +47,9 @@
 			transform: translateX(calc(-100% - 0.5rem));
 		}
 	}
+	@media screen and (max-width: 800px) {
+		.banner {
+			bottom: 4rem;
+		}
+	}
 </style>

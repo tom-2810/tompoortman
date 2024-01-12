@@ -38,4 +38,9 @@
 			opacity: 1;
 		}
 	}
+	@media screen and (max-width: 800px) {
+		main {
+			gap: 15rem;
+		}
+	}
 </style>

@@ -9,6 +9,8 @@
 
 <style>
 	a {
+		display: block;
+		width: fit-content;
 		border-radius: 3px;
 		background-color: black;
 		height: 2.1rem;
