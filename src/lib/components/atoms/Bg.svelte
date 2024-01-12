@@ -27,8 +27,8 @@
 			to bottom,
 			transparent,
 			transparent 5px,
-			#cdcdcd 5px,
-			#cdcdcd 10px
+			#aaaaaa 5px,
+			#aaaaaa 10px
 		);
 	}
 

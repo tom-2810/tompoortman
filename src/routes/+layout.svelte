@@ -21,6 +21,9 @@
 
 <style>
 	main {
+		display: flex;
+		flex-direction: column;
+		gap: 25rem;
 		position: relative;
 		overflow: hidden;
 		animation: 0.2s fade-in forwards;

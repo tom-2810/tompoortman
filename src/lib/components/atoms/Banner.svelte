@@ -15,7 +15,7 @@
 	.banner {
 		position: relative;
 		left: -55%;
-		bottom: 5rem;
+		bottom: 2.5rem;
 		rotate: 5deg;
 		width: 230%;
 		background-color: #202020;

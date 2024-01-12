@@ -13,6 +13,7 @@
 		p {
 			display: flex;
 			flex-direction: column;
+			font-size: 1.1rem;
 		}
 	}
 </style>

@@ -27,6 +27,7 @@
 	}
 	a {
 		position: relative;
+		left: .5em;
 		z-index: 3;
 	}
 </style>
