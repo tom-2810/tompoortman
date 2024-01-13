@@ -27,8 +27,13 @@
 	ul {
 		margin-top: 2rem;
 		display: flex;
-		justify-content: space-between;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
 		gap: 1rem;
+	}
+	li {
+		width: 100%;
+		max-width: 20rem;
 	}
 	.more {
 		width: fit-content;

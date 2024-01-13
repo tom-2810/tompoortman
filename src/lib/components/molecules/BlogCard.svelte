@@ -57,6 +57,8 @@
 		width: fit-content;
 		background-color: #202020;
 		border-radius: 6px;
+		max-width: 20rem;
+		width: 100%;
 	}
 	section {
 		position: relative;
@@ -64,7 +66,7 @@
 		flex-direction: column;
 		justify-content: space-between;
 		height: 22rem;
-		width: 20rem;
+		width: 100%;
 		border: 2px solid #202020;
 		border-radius: 6px;
 		background-color: white;
