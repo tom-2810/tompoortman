@@ -55,6 +55,8 @@
 	a {
 		display: block;
 		width: fit-content;
+		background-color: #202020;
+		border-radius: 6px;
 	}
 	section {
 		position: relative;
@@ -71,7 +73,7 @@
 	}
 	section:hover {
 		background-color: rgb(250, 250, 250);
-		transform: translateY(-16px);
+		transform: translateY(-6px);
 		transition: 0.1s;
 	}
 	section > div {
