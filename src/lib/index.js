@@ -21,9 +21,11 @@ export { default as ProjectExternalLinkList } from '$lib/components/molecules/Pr
 export { default as WelcomeTop } from '$lib/components/molecules/WelcomeTop.svelte';
 export { default as ProjectCard } from '$lib/components/molecules/ProjectCard.svelte';
 export { default as BlogCard } from '$lib/components/molecules/BlogCard.svelte';
+export { default as Connect } from '$lib/components/molecules/Connect.svelte';
 
 export { default as Header } from '$lib/components/organisms/Header.svelte';
 export { default as Welcome } from '$lib/components/organisms/Welcome.svelte';
 export { default as ProjectsOverview } from '$lib/components/organisms/ProjectsOverview.svelte';
 export { default as BlogsOverview } from '$lib/components/organisms/BlogsOverview.svelte';
 export { default as RecentBlogs } from '$lib/components/organisms/RecentBlogs.svelte';
+export { default as Footer } from '$lib/components/organisms/Footer.svelte';

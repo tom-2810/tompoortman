@@ -22,7 +22,7 @@
 		position: relative;
 		padding: 0 0.75rem;
 		height: 2.1rem;
-		font-size: 1.05rem;
+		font-size: 1.07rem;
 		background-color: white;
 		border: 2px solid black;
 		border-radius: 3px;

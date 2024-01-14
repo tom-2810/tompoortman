@@ -8,7 +8,7 @@
 	setContext('connect-links', data);
 </script>
 
-<!-- <PageTransitionsContainer refresh={$page.url.pathname} /> -->
+<PageTransitionsContainer refresh={$page.url.pathname} />
 
 <Header />
 

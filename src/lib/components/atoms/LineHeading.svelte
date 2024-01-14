@@ -9,13 +9,11 @@
 {/if}
 
 <style>
-    h1, h2 {
-        border-bottom: 4px solid black;
-    }
-    h1 {
-        font-size: 4rem;
-    }
-    h2 {
-        font-size: 2rem;
-    }
+	h1,
+	h2 {
+		border-bottom: 4px solid black;
+		font-weight: 500;
+		letter-spacing: -0.055em;
+		font-size: 3rem;
+	}
 </style>

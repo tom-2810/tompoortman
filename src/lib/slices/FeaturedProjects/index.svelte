@@ -17,7 +17,6 @@
 		{/each}
 	</ul>
 	<div class="more">
-
 		<Button link={'/projects'} text={'All projects'} />
 	</div>
 </section>
@@ -33,6 +32,7 @@
 		width: min-content;
 		line-height: 100%;
 		font-weight: 500;
+		letter-spacing: -0.055em;
 	}
 	ul {
 		display: grid;

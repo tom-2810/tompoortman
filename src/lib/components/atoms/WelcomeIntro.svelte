@@ -26,6 +26,6 @@
 		font-weight: 600;
 	}
 	span:last-child {
-		margin-top: 2rem;
+		margin-top: 2.5rem;
 	}
 </style>

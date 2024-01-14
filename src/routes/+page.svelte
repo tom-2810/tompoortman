@@ -1,13 +1,7 @@
 <script>
 	import { SliceZone } from '@prismicio/svelte';
 	import { components } from '$lib/slices';
-	import {
-		ConnectExternalLinkList,
-		ProjectExternalLinkList,
-		Welcome,
-		ProjectCard,
-		RecentBlogs
-	} from '$lib/index.js';
+	import { Welcome, RecentBlogs, Footer } from '$lib/index.js';
 
 	export let data;
 </script>
@@ -17,3 +11,5 @@
 <SliceZone slices={data.page.slices} {components} />
 
 <RecentBlogs blogs={data.blogs} />
+
+<Footer data={data.page} />
